@@ -4,14 +4,14 @@
     "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\WorkingAndProjecting.csproj": {}
   },
   "projects": {
-    "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\WorkingAndProjecting.csproj": {
+    "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Domain\\WorkingAndProjecting.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\WorkingAndProjecting.csproj",
-        "projectName": "WorkingAndProjecting",
-        "projectPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\WorkingAndProjecting.csproj",
+        "projectUniqueName": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Domain\\WorkingAndProjecting.Domain.csproj",
+        "projectName": "WorkingAndProjecting.Domain",
+        "projectPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Domain\\WorkingAndProjecting.Domain.csproj",
         "packagesPath": "C:\\Users\\petro\\.nuget\\packages\\",
-        "outputPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\obj\\",
+        "outputPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\petro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,18 +48,156 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )"
-            },
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Infrastructure\\WorkingAndProjecting.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Infrastructure\\WorkingAndProjecting.Infrastructure.csproj",
+        "projectName": "WorkingAndProjecting.Infrastructure",
+        "projectPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Infrastructure\\WorkingAndProjecting.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\petro\\.nuget\\packages\\",
+        "outputPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\petro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Domain\\WorkingAndProjecting.Domain.csproj": {
+                "projectPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Domain\\WorkingAndProjecting.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\WorkingAndProjecting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\WorkingAndProjecting.csproj",
+        "projectName": "WorkingAndProjecting",
+        "projectPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\WorkingAndProjecting.csproj",
+        "packagesPath": "C:\\Users\\petro\\.nuget\\packages\\",
+        "outputPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\petro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Infrastructure\\WorkingAndProjecting.Infrastructure.csproj": {
+                "projectPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Infrastructure\\WorkingAndProjecting.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
