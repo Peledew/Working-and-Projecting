@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace WorkingAndProjecting.Domain.Entities
@@ -17,9 +18,11 @@ namespace WorkingAndProjecting.Domain.Entities
         public int ProjectId { get; set; }
 
         [ForeignKey("ProjectId")]
+        [JsonIgnore]
         public required Project Project { get; set; }
 
         [ForeignKey("WorkerId")]
-        public required Worker Worker { get; set; }
+        [JsonIgnore]
+        public required User Worker { get; set; }
     }
 }

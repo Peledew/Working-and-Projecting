@@ -16,6 +16,7 @@ namespace WorkingAndProjecting.Domain.Entities
         public int Id { get; set; }
         [Required]
         public string Name { get; set; } = string.Empty;
+        [StringLength(500)]
         public string? Description {  get; set; }
 
     }

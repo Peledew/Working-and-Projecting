@@ -11,7 +11,7 @@
         }
 
         // Define DbSet properties for your tables
-        public DbSet<Worker> Workers { get; set; }
+        public DbSet<User> Workers { get; set; }
         public DbSet<WorkerProject> WorkerProjects { get; set; }
         public DbSet<Department> Departments { get; set; }
     }
