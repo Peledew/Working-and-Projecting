@@ -16,6 +16,17 @@
           "WorkingAndProjecting.dll": {}
         }
       },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "9.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
@@ -1080,6 +1091,18 @@
           }
         }
       },
+      "WorkingAndProjecting.Contracts/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "WorkingAndProjecting.Domain": "1.0.0"
+        },
+        "runtime": {
+          "WorkingAndProjecting.Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "WorkingAndProjecting.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.0",
@@ -1094,6 +1117,7 @@
       },
       "WorkingAndProjecting.Infrastructure/1.0.0": {
         "dependencies": {
+          "WorkingAndProjecting.Contracts": "1.0.0",
           "WorkingAndProjecting.Domain": "1.0.0"
         },
         "runtime": {
@@ -1110,6 +1134,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "Azure.Core/1.38.0": {
       "type": "package",
@@ -1698,6 +1729,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "WorkingAndProjecting.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "WorkingAndProjecting.Domain/1.0.0": {
       "type": "project",

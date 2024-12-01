@@ -8,10 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WorkingAndProjecting.Contracts\WorkingAndProjecting.Contracts.csproj" />
     <ProjectReference Include="..\WorkingAndProjecting.Domain\WorkingAndProjecting.Domain.csproj" />
   </ItemGroup>
 

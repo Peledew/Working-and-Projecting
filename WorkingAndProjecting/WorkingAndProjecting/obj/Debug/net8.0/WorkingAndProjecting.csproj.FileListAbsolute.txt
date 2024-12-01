@@ -171,3 +171,10 @@ E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting
 E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\AutoMapper.dll
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\WorkingAndProjecting.Contracts.dll
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\WorkingAndProjecting.Contracts.pdb
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\WorkingAndProjecting.staticwebassets.endpoints.json
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\obj\Debug\net8.0\staticwebassets\msbuild.WorkingAndProjecting.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

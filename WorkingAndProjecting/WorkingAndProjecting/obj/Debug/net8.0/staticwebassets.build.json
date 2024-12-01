@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "dlYGoP/6szpEkn1RQJayqteWWHe1WNLzxxpvhImb3uw=",
+  "Hash": "dhPcS95RyYsOvufjJwzeMI5GluS4xtkGWykOTXiomm8=",
   "Source": "WorkingAndProjecting",
   "BasePath": "_content/WorkingAndProjecting",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
