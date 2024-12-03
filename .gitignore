@@ -398,11 +398,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-/MovieReviewerPlatform/MovieReviewerPlatform/obj/Debug/net8.0
-/MovieReviewerPlatform/MovieReviewerPlatform/obj
-/MovieReviewerPlatform/MovieReviewerPlatform/bin
 
 /WorkingAndProjecting/WorkingAndProjecting/bin
 /WorkingAndProjecting/WorkingAndProjecting/obj
-/WorkingAndProjecting/WorkingAndProjecting/obj
-/WorkingAndProjecting/WorkingAndProjecting/bin
+
