@@ -12,8 +12,8 @@ namespace WorkingAndProjecting.Contracts.Interfaces
     {
         Task<List<UserDto>> GetAllAsync();
         Task<UserDto?> GetByIdAsync(int id);
-        Task AddAsync(UserDto user);
-        Task DeleteAsync(UserDto user);
+        Task<UserDto> AddAsync(UserDto user);
+        Task<UserDto?> DeleteAsync(int id);
         Task SaveChangesAsync();
         Task<UserDto> UpdateAsync(UserDto user);
     }

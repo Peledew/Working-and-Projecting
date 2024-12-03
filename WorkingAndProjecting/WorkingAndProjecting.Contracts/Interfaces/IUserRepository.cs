@@ -12,7 +12,7 @@ namespace WorkingAndProjecting.Contracts.Interfaces
         Task<List<User>> GetAllAsync();
         Task<User?> GetByIdAsync(int id);
         Task AddAsync(User user);
-        Task DeleteAsync(User user);
+        Task<User> DeleteAsync(User user);
         Task SaveChangesAsync();
     }
 }

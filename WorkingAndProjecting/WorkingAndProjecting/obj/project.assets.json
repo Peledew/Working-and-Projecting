@@ -1747,6 +1747,19 @@
         "runtime": {
           "bin/placeholder/WorkingAndProjecting.Infrastructure.dll": {}
         }
+      },
+      "WorkingAndProjecting.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "WorkingAndProjecting.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WorkingAndProjecting.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WorkingAndProjecting.Services.dll": {}
+        }
       }
     }
   },
@@ -5216,13 +5229,19 @@
       "type": "project",
       "path": "../WorkingAndProjecting.Infrastructure/WorkingAndProjecting.Infrastructure.csproj",
       "msbuildProject": "../WorkingAndProjecting.Infrastructure/WorkingAndProjecting.Infrastructure.csproj"
+    },
+    "WorkingAndProjecting.Services/1.0.0": {
+      "type": "project",
+      "path": "../WorkingAndProjecting.Services/WorkingAndProjecting.Services.csproj",
+      "msbuildProject": "../WorkingAndProjecting.Services/WorkingAndProjecting.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2",
-      "WorkingAndProjecting.Infrastructure >= 1.0.0"
+      "WorkingAndProjecting.Infrastructure >= 1.0.0",
+      "WorkingAndProjecting.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5259,6 +5278,9 @@
           "projectReferences": {
             "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Infrastructure\\WorkingAndProjecting.Infrastructure.csproj": {
               "projectPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Infrastructure\\WorkingAndProjecting.Infrastructure.csproj"
+            },
+            "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Services\\WorkingAndProjecting.Services.csproj": {
+              "projectPath": "E:\\Repositories\\Working-and-Projecting\\WorkingAndProjecting\\WorkingAndProjecting.Services\\WorkingAndProjecting.Services.csproj"
             }
           }
         }

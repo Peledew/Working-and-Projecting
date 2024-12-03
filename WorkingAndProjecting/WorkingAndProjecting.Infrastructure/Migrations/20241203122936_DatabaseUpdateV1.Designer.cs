@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorkingAndProjecting.DbContext;
 
@@ -11,9 +12,11 @@ using WorkingAndProjecting.DbContext;
 namespace WorkingAndProjecting.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241203122936_DatabaseUpdateV1")]
+    partial class DatabaseUpdateV1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -150,18 +153,18 @@ namespace WorkingAndProjecting.Infrastructure.Migrations
 
                     b.HasIndex("ManagerId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Workers");
                 });
 
             modelBuilder.Entity("WorkingAndProjecting.Domain.Entities.WorkerProject", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("WorkerId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProjectId")
                         .HasColumnType("int");
 
-                    b.HasKey("UserId", "ProjectId");
+                    b.HasKey("WorkerId", "ProjectId");
 
                     b.HasIndex("ProjectId");
 
@@ -208,15 +211,15 @@ namespace WorkingAndProjecting.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WorkingAndProjecting.Domain.Entities.User", "User")
+                    b.HasOne("WorkingAndProjecting.Domain.Entities.User", "Worker")
                         .WithMany("Projects")
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("WorkerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Project");
 
-                    b.Navigation("User");
+                    b.Navigation("Worker");
                 });
 
             modelBuilder.Entity("WorkingAndProjecting.Domain.Entities.Project", b =>

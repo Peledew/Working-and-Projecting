@@ -178,3 +178,5 @@ E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting
 E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\obj\Debug\net8.0\staticwebassets\msbuild.WorkingAndProjecting.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\WorkingAndProjecting.Services.dll
+E:\Repositories\Working-and-Projecting\WorkingAndProjecting\WorkingAndProjecting\bin\Debug\net8.0\WorkingAndProjecting.Services.pdb

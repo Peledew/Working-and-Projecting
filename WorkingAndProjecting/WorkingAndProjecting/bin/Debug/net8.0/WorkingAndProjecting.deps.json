@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Swashbuckle.AspNetCore": "6.6.2",
-          "WorkingAndProjecting.Infrastructure": "1.0.0"
+          "WorkingAndProjecting.Infrastructure": "1.0.0",
+          "WorkingAndProjecting.Services": "1.0.0"
         },
         "runtime": {
           "WorkingAndProjecting.dll": {}
@@ -1126,6 +1127,17 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "WorkingAndProjecting.Services/1.0.0": {
+        "dependencies": {
+          "WorkingAndProjecting.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "WorkingAndProjecting.Services.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1741,6 +1753,11 @@
       "sha512": ""
     },
     "WorkingAndProjecting.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WorkingAndProjecting.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

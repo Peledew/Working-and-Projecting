@@ -26,10 +26,11 @@ namespace WorkingAndProjecting.Infrastructure.Repositories
             await _appDbContext.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(User user)
+        public async Task<User> DeleteAsync(User user)
         {
             _appDbContext.Users.Remove(user);
             await _appDbContext.SaveChangesAsync();
+            return user;
         }
 
         public async Task<List<User>> GetAllAsync()

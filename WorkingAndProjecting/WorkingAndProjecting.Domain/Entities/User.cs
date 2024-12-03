@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WorkingAndProjecting.Domain.Entities;
 
-[Table("Workers")]
+[Table("Users")]
 public class User
 {
     [Key]
@@ -13,7 +13,7 @@ public class User
     public string FirstName { get; set; } = string.Empty;
     [Required]
     public string LastName { get; set; } = string.Empty;
-    public string? Role { get; set; } = "Worker";
+    public string? Role { get; set; } = "User";
     public double? Salary {  get; set; }
     public string? Gender { get; set;}
     public string? Email { get; set; }

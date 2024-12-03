@@ -11,18 +11,18 @@ using System.Threading.Tasks;
 namespace WorkingAndProjecting.Domain.Entities
 {
     [Table("WorkerProjects")]
-    [PrimaryKey(nameof(WorkerId), nameof(ProjectId))]
+    [PrimaryKey(nameof(UserId), nameof(ProjectId))]
     public class WorkerProject
     {
-        public int WorkerId { get; set; }
+        public int UserId { get; set; }
         public int ProjectId { get; set; }
 
         [ForeignKey("ProjectId")]
         [JsonIgnore]
-        public required Project Project { get; set; }
+        public Project Project { get; set; } = null!;
 
-        [ForeignKey("WorkerId")]
+        [ForeignKey("UserId")]
         [JsonIgnore]
-        public required User Worker { get; set; }
+        public User User { get; set; } = null!;
     }
 }
