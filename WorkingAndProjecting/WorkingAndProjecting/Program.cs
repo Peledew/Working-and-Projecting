@@ -24,6 +24,8 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddHttpContextAccessor();
+
 
 var app = builder.Build();
 

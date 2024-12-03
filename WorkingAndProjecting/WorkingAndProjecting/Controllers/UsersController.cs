@@ -54,6 +54,15 @@ namespace WorkingAndProjecting.Controllers
             return Ok(new ApiResponse<UserDto> { Success = true, Message = "User found.", Data = user });
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var users = await _userService.GetAllAsync();
+            if (users == null)
+                return NotFound(new ApiResponse<object> { Success = false, Message = "Users are not found" });
 
+            return Ok(new ApiResponse<List<UserDto>> { Success = true, Message = "Users have been found!", Data = users });
+
+        }
     }
 }

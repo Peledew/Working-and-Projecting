@@ -2,11 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using WorkingAndProjecting.Contracts.DTOs;
 using WorkingAndProjecting.Contracts.Interfaces;
 using WorkingAndProjecting.Domain.Entities;
+
 
 namespace WorkingAndProjecting.Services
 {
@@ -14,11 +16,19 @@ namespace WorkingAndProjecting.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
+       // private readonly IHttpContextAccessor _httpContextAccessor;
         public UserService(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
             _mapper = mapper;
+          //  _httpContextAccessor = httpContextAccessor;
         }
+
+        //public int GetCurrentUserId()
+        //{
+        //    var userIdClaim = _httpContextAccessor.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier);
+        //    return userIdClaim != null ? int.Parse(userIdClaim.Value) : throw new Exception("User not authenticated");
+        //}
 
         public async Task<UserDto> AddAsync(UserDto user)
         {
@@ -37,9 +47,13 @@ namespace WorkingAndProjecting.Services
             
         }
 
-        public Task<List<UserDto>> GetAllAsync()
+        public async Task<List<UserDto>?> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var users = await _userRepository.GetAllAsync();
+            if (!users.Any())
+                return null;
+
+            return _mapper.Map<List<UserDto>>(users);
         }
 
         public async Task<UserDto?> GetByIdAsync(int id)
@@ -49,11 +63,6 @@ namespace WorkingAndProjecting.Services
                 return null;
 
             return _mapper.Map<User, UserDto>(user);
-        }
-
-        public Task SaveChangesAsync()
-        {
-            throw new NotImplementedException();
         }
 
         public Task<UserDto> UpdateAsync(UserDto user)

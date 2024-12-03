@@ -10,11 +10,13 @@ namespace WorkingAndProjecting.Contracts.Interfaces
 {
     public interface IUserService
     {
-        Task<List<UserDto>> GetAllAsync();
+        //public int GetCurrentUserId();
+        Task<List<UserDto>?> GetAllAsync();
         Task<UserDto?> GetByIdAsync(int id);
         Task<UserDto> AddAsync(UserDto user);
         Task<UserDto?> DeleteAsync(int id);
-        Task SaveChangesAsync();
         Task<UserDto> UpdateAsync(UserDto user);
     }
 }
+
+//TODO : Autentifikacija i autorizacija usera (JWT ili nesto drugo)
