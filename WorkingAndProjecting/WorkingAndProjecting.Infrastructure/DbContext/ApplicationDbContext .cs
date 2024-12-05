@@ -14,5 +14,6 @@
         public DbSet<User> Users { get; set; }
         public DbSet<WorkerProject> WorkerProjects { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Project> Projects { get; set; }
     }
 }
